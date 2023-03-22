@@ -9,7 +9,7 @@ const form = document.querySelector("form")
 form.onsubmit = function(e) {
   e.preventDefault();
 
-  const input = document.querySelector("#animal").value;
+  const input = document.querySelector("#animal").value.toLowerCase();
   hide()
 
   if (input === "platypus") {
